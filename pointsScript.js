@@ -1,5 +1,3 @@
-//store default row
-
 //create object to serve as database of grade points values
 const gradeValues = {
     "H1": 100, "O1":56,
