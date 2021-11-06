@@ -86,14 +86,12 @@ function calculatePoints(){
         gradeValue += 25;
     }
 
-    //display points value
-    document.getElementById("pointsCont").innerHTML = gradeValue;
+    //display points value if a grade is selected
+    if (gradeValue >= -1){
+        document.getElementById("pointsCont").innerHTML = gradeValue;
+    }
 
     //recalculate if subject changes
     var subjects = document.getElementById("subjects");
     subjects.setAttribute("onChange", "calculatePoints()")
-}
-
-function resetPopints(){
-    
 }
